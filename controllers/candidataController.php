@@ -132,6 +132,7 @@
               Utils::isAdmin();
               $candidata = new Candidata();
              
+              
                    $file = $_FILES['imagen'];
                    $fileName = $file['name'];
                    $mimetype = $file['type'];
@@ -146,6 +147,7 @@
                       move_uploaded_file($file['tmp_name'], 'uploads/images/' . $fileName);
                       
                    }
+             
               
               $candidataUpdate= $candidata->update($_POST['candidataID'], $_POST['nombre'], $_POST['apellidoMaterno'], $_POST['apellidoPaterno'], $_POST['correo'], $_POST['carreraID'], $_POST['edad'],$_POST['imagen'], $_POST['descripcion']);
               if($candidataUpdate) {
