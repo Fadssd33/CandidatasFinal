@@ -6,6 +6,7 @@
 ?>
 
 
+<body>
 <div class="section section-our-clients-freebie">
     <div class="container">
         <div class="title-area">
@@ -47,9 +48,9 @@
                                     <!-- Mostrar la carrera -->
                                     <p class="small-text"><?= Utils::formatText($can->NombreCarrera);?></p>
                                     <p class="description"><?=$can->descripcion?></p>
-                                    <form action="<?=base_url?>candidata/eliminarCandidata2" method="POST">
+                                    <form action="<?=base_url?>candidata/eliminarCandidata2" onSubmit="return confirm('Estas seguro?');"method="POST">
                                         <!-- pasa el id de la candidata -->
-                                        <input type="text" value="<?=$can->CandidataID?>" name="candidataID"
+                                        <input type="text"  value="<?=$can->CandidataID?>" name="candidataID"
                                             style="display:none;">
 
                                         <input type="submit" value="eliminar" name="candidata"
@@ -63,11 +64,12 @@
                     </div>
                     <?php endwhile;?>
     </div>
-
+    
     </a>
 
     </li>
     </ul>
+</body>
 
     <?php
     //footer
