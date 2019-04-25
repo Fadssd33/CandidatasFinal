@@ -18,16 +18,29 @@ require_once 'config/db.php';
 
         }
 
+        // public function getAll() {
+        //     $listaAlumnos = [];
+        //     $db = Db::getConnect();
+        //     $sql = $db->query('SELECT * FROM alumnos');
+
+        //     foreach($sql->fetchAll() as $alumno) {
+        //         $listaAlumnos = new Alumno($alumno['CURP'], $alumno['nombre'], $alumno['apellidoMaterno'], $alumno['apellidoPaterno'], $alumno['sexo'], $alumno['voto'], $tipoUsuario['tipoUsuario']);
+
+        //     }
+           
+        //     return $listaAlumnos;
+        // }
+
         public function getAll() {
-            $listaAlumnos = [];
-            $db = Db::getConnect();
-            $sql = $db->query('SELECT * FROM alumnos');
+            $sql = 'SELECT * FROM alumnos';
+            $result = $this->db->query($sql);
+            return $result;
+        }
 
-            foreach($sql->fetchAll() as $alumno) {
-                $listaAlumnos = new Alumno($alumno['CURP'], $alumno['nombre'], $alumno['apellidoMaterno'], $alumno['apellidoPaterno'], $alumno['sexo'], $alumno['voto'], $tipoUsuario['tipoUsuario']);
-
-            }
-            return $listaAlumnos;
+        public function getWhoVoted() {
+            $sql = 'SELECT * FROM alumnos WHERE voto = 1';
+            $result = $this->db->query($sql);
+            return $result;
         }
 
         public function login($CURP, $expediente) {
