@@ -23,7 +23,7 @@
             $candidataById = $candidata->getById($id);
             $descripcion;
             while ($candidataDescripcion = $candidataById->fetch_object()):
-                $descripcion = "Sobre mi: {$candidataDescripcion->descripcion}";
+                $descripcion = "Numero de votos: {$candidataDescripcion->numVotos}<br> Sobre mi: {$candidataDescripcion->descripcion}";
             endwhile;
             return $descripcion; 
 
