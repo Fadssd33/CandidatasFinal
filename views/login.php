@@ -1,18 +1,18 @@
 <?php 
-	  require_once 'config/parameters.php';
 	  require_once 'helpers/utils.php';
+	  require_once 'config/parameters.php';
 ?>
 
 
 
 <head>
     <meta charset="utf-8" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Login Candidatas UES</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href="<?=base_url?>assets/css/bootstrap.css" rel="stylesheet" />
     <link href="<?=base_url?>assets\css\loginCSS.css" rel="stylesheet" />
+
 
     <!--     Fonts and icons     -->
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>

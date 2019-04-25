@@ -48,7 +48,7 @@
                                     <!-- Mostrar la carrera -->
                                     <p class="small-text"><?= Utils::formatText($can->NombreCarrera);?></p>
                                     <p class="description"><?=$can->descripcion?></p>
-                                    <form action="<?=base_url?>candidata/eliminarCandidata2" onSubmit="return confirm('Estas seguro?');"method="POST">
+                                    <form action="<?=base_url?>candidata/eliminarCandidata2" onSubmit="return confirm('Estas seguro?');" method="POST">
                                         <!-- pasa el id de la candidata -->
                                         <input type="text"  value="<?=$can->CandidataID?>" name="candidataID"
                                             style="display:none;">

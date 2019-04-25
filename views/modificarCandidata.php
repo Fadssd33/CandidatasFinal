@@ -41,7 +41,7 @@
                                         src="<?=base_url?>uploads/images/<?=$can->imagen?>" />
                                 </div>
                                 <div class="description">
-                                    <form action="<?=base_url?>candidata/modificarCandidata2" method="POST"
+                                    <form action="<?=base_url?>candidata/modificarCandidata2" onSubmit="return confirm('¿Realmente deseas guardar los cambios?');"method="POST"
                                         enctype="multipart/form-data">
                                         <input type="file" class="form-control-file"
                                             value="<?=base_url?>uploads/images/<?=$can->imagen?>" name="imagen">
