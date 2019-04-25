@@ -151,13 +151,13 @@
                             float: left;
                         }
                 /* Modificar este con javascript */
-                        body .ui_box__inner .progress_bar {
-                            height: 6px;
-                            float: left;
-                            width: 58%;
-                            background: #ec6565;
-                            -webkit-animation: bar 2s;
-                        }
+                /* body .ui_box__inner .progress_bar {
+                    height: 6px;
+                    float: left;
+                    width: 58%;
+                    background: #ec6565;
+                    -webkit-animation: bar 2s;
+                } */
 
                         body .ui_box__inner .progress_bar--two {
                             height: 6px;
@@ -183,7 +183,7 @@
                         }
 
                         body .ui_box:hover {
-                            background: #ec6565;
+                            background: #3d3d3d;
                             -webkit-transform: scale(1.1);
                             transform: scale(1.1);
                             -webkit-transition-property: background, -webkit-transform;

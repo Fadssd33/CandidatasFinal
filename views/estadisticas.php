@@ -16,9 +16,10 @@
         <div class="container">
             <div class="content">
                 <div class="title-area">
-                   
+
                     <h1 class="title-modern">Estadisticas</h1>
-                    <h3>entium placeat dolorem error officiis libero voluptates eum nam delectus aliquid cum nemo animi, aperiam, non voluptas maxime deserunt.</h2>
+                    <h3>entium placeat dolorem error officiis libero voluptates eum nam delectus aliquid cum nemo animi,
+                        aperiam, non voluptas maxime deserunt.</h2>
                         <div class="separator line-separator">♦</div>
                 </div>
 
@@ -32,10 +33,12 @@
                                 </h2>
                                 <!-- <p>Lorem ipsum dolor sit amet</p> -->
                                 <div class='stat'>
-                                    <span>58%</span>
+                                    <span><?=stats::getPorcentajeVotos()?>%</span>
                                 </div>
                                 <div class='progress'>
-                                    <div class='progress_bar'></div>
+                                    <div class='progress_bar'
+                                        style="height: 6px;float: left;width: <?=stats::getPorcentajeVotos()?>%;background: #ec6565;webkit-animation: bar 2s;">
+                                    </div>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet. Some more super groovy information about this stat.</p>
                             </div>
@@ -46,64 +49,32 @@
                         </div>
                     </div>
                     <!--fin div box -->
+
+
                     <div class='col-md-4'>
                         <div class='ui_box'>
                             <div class='ui_box__inner'>
                                 <h2>
-                                    Candidatas mas votadas
+                                    Candidatas 
                                 </h2>
                                 <!-- <p>Lorem ipsum dolor sit amet</p> -->
-                                <div class='stat_left'>
-                                    <ul>
-                                        <li>
-                                            <?=stats::getPorcentajeVotos()?>
-                                        </li>
-                                        <li>
-                                        <button onclick="changeStatBar()">Click me</button> 
-                                        </li>
-                                        <li>
-                                            Entertainment
-                                        </li>
-                                       
-                                    </ul>
+                                <div class='stat'>
+                                    <span><?=stats::getPorcentajeVotos()?>%</span>
                                 </div>
-                                <div class='progress_graph'>
-                                    <div class='progress_graph__bar--1'></div>
-                                    <div class='progress_graph__bar--2'></div>
-                                    <div class='progress_graph__bar--3'></div>
+                                <div class='progress'>
+                                    <div class='progress_bar'
+                                        style="height: 6px;float: left;width: <?=stats::getPorcentajeVotos()?>%;background: #ec6565;webkit-animation: bar 2s;">
+                                    </div>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet. Some more super groovy information.</p>
+                                <p>Lorem ipsum dolor sit amet. Some more super groovy information about this stat.</p>
                             </div>
-                            <div class='drop'>
+                            <!-- <div class='drop'>
                                 <p>Take a closer look</p>
                                 <div class='arrow'></div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="row">
-                        <div class='col-md-4'>
-                            <div class='ui_box'>
-                                <div class='ui_box__inner'>
-                                    <h2>
-                                        Total Sales
-                                    </h2>
-                                    <p>Lorem ipsum dolor sit amet</p>
-                                    <div class='stat'>
-                                        <span>$34,403.93</span>
-                                    </div>
-                                    <div class='progress'>
-                                        <div class='progress_bar--two'></div>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet. Some more super groovy information about this stat.
-                                    </p>
-                                </div>
-                                <div class='drop'>
-                                    <p>Take a closer look</p>
-                                    <div class='arrow'></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
