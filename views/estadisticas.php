@@ -51,15 +51,44 @@
                     <!--fin div box -->
 
 
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+<!-- Votos por candidata -->
+
+<link rel="stylesheet" href="<?=base_url?>assets/css/stats.css">
+    <div class="section section-our-team-freebie">
+        <div class="image" style="background-image:url('assets/img/header-2.jpeg')">
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="title-area">
+
+                    <h1 class="title-modern">Votos por candidata</h1>
+                    <h3>Aqui encontraras el porcentaje de votos por candidatas, tambien puedes buscar por tu favorita</h2>
+                        <div class="separator line-separator">♦</div>
+                </div>
+
+
+                <div class='ui'>
+
+                <?php while ($can = $candidatasStats->fetch_object()):?>
                     <div class='col-md-4'>
                         <div class='ui_box'>
                             <div class='ui_box__inner'>
                                 <h2>
-                                    Candidatas 
+                                    <?=$can->Nombre?>
                                 </h2>
                                 <!-- <p>Lorem ipsum dolor sit amet</p> -->
                                 <div class='stat'>
-                                    <span><?=stats::getPorcentajeVotos()?>%</span>
+                                    <span><?=stats::getPorcentajeVotosCandidata($can->CandidataID)?>%</span>
                                 </div>
                                 <div class='progress'>
                                     <div class='progress_bar'
@@ -74,12 +103,20 @@
                             </div> -->
                         </div>
                     </div>
+                    <!--fin div box -->
+<?php endwhile?>
+
+                   
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
 
     </div>
+
+<!-- fin votos por candidata -->
     <!-- Script para modificar la barra de alumnos que han votado -->
     <script src='<?=base_url?>assets/js/stats.js'></script>
     <script
