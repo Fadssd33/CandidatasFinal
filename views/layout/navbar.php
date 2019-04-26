@@ -20,6 +20,10 @@
                   
                         <a  href=" https://www.ues.mx" target="_blank"><i class="fa fa-university" aria-hidden="true"></i> ues_mx</a>
                     </li>
+                    <li>
+                  
+                        <a  href="<?=base_url?>estadisticas/index" ><i class="fa fa-university" aria-hidden="true"></i> Estadisticas</a>
+                    </li>
                     <li class="dropdown">
                         <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-share-alt"></i> Siguenos
