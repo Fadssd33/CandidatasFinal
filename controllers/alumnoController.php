@@ -41,13 +41,17 @@
         }
 
         public function logout() {
+
             if(isset($_SESSION['identity'])) {
                 unset($_SESSION['identity']);
+
             }
                 
             if(isset($_SESSION['admin'])) {
                 unset($_SESSION['admin']);
             }
+
+        
             header("location:" .base_url);
 
         }
@@ -64,6 +68,8 @@
                 //agregar el id de candidata
                 if($saveAlumnoVote && $saveCandidataVote) {
                     $_SESSION['votoCompletado'] = 'complete';
+                    //Sesion para que el usuario ya no pueda votar
+                    $_SESSION['identity']->voto = 1;
                 }
                 else {
                     //Poner errror base de datos
