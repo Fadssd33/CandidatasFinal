@@ -13,5 +13,26 @@
             return $porcentaje;
 
         }
+
+        function getPorcentajeVotosCandidata($ID) {
+            require_once 'models/candidatas.php';
+            $candidata = new Candidata();
+            $alumno = new Alumno();
+
+            //saca el numero de candidatas
+            $numCandidatas = mysqli_num_rows($candidata->getCandidatas());
+            $numAlumnosVotados = mysqli_num_rows($alumno->getWhoVoted());
+            //saca el numero de votos de la candidata
+            $votos = $candidata->getVotes($ID);
+            $votosObjeto = $votos->fetch_object();
+        
+            $numVotos = $votosObjeto->numVotos;
+
+            $porcentaje = ($numVotos * 100) / $numAlumnosVotados;
+            
+            
+            return $porcentaje;
+
+        }
     }
 ?>
