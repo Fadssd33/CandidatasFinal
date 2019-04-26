@@ -22,7 +22,7 @@
                     </li>
                     <li>
                   
-                        <a  href="<?=base_url?>estadisticas/index" ><i class="fa fa-university" aria-hidden="true"></i> Estadisticas</a>
+                        <a  href="<?=base_url?>estadisticas/index" ><i class="fa fa-pie-chart" aria-hidden="true"></i> Estadisticas</a>
                     </li>
                     <li class="dropdown">
                         <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
