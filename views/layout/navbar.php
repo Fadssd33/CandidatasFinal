@@ -10,7 +10,7 @@
                     <span class="icon-bar bar2"></span>
                     <span class="icon-bar bar3"></span>
                 </button>
-                <a href="http://www.creative-tim.com" class="navbar-brand"><i class="fa fa-graduation-cap" aria-hidden="true"></i> 
+                <a href="http://localhost:82/candidatasfinal/" class="navbar-brand"><i class="fa fa-graduation-cap" aria-hidden="true"></i> 
                     UES - Candidatas  
                 </a>
             </div>

@@ -126,14 +126,12 @@
 
                         <!-- Si el usuario ya voto -->
                         <?php if(isset($_SESSION['identity']) && $_SESSION['identity']->voto == 1):?>
-                        <p class="description">Ya has votado por una candidata, pero aun asi puedes zorrear!</p>
+                        <p class="description">Ya has votado por una candidata, pero aun asi puedes ver el top ranking!</p>
                         <!-- si el usuarion no ha votado -->
                         <?php elseif(isset($_SESSION['identity']) && $_SESSION['identity']->voto == 0):?>
-                        <p class="description">En el siguiente apartado se enciuentras las mas sabrosas de la escuela
-                            ahi para que waches la que mas te gusta carnal .</p>
+                        <p class="description">En el siguiente apartado se encuentras las candidatas que participan para ser Reina UES, no olvides apoyar.</p>
                         <?php else :?>
-                        <p class="description">En el siguiente apartado se enciuentras las mas sabrosas de la escuela
-                            ahi para que waches la que mas te gusta carnal .</p>
+                        <p class="description">Inicia secion para que en el siguiente apartado se encuentres las candidatas que participan para ser Reina UES, no olvides apoyar.</p>
 
 
                         <?php endif; ?>
@@ -268,7 +266,7 @@
             <div class="title-area">
                 <h2 class="text-white">¿Quieres participar como candidata?</h2>
                 <div class="separator line-separator">♦</div>
-                <p class="description">Solo tienes que ser estudiante de la UES, muy gay o puta!</p>
+                <p class="description">Solo tienes que pertenecer a unas de las carreras asignadas por la universidad, asercate con nosotros para participar como candidata a Reina UES.</p>
             </div>
 
             <div class="button-get-started">
