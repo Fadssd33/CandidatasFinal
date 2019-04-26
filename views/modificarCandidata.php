@@ -77,7 +77,7 @@
                                         <input type="number" name="edad" id="edad" value="<?=$can->Edad?>">
 
 
-                                        <textarea name="descripcion" id="" cols="20" rows="10"
+                                        <textarea name="descripcion" id="" cols="23" rows="5"
                                             maxlength="300"><?=$can->descripcion?></textarea>
 
 
