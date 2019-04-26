@@ -94,10 +94,11 @@
                                 </div>
                                 <div class='progress'>
                                     <div class='progress_bar'
-                                        style="height: 6px;float: left;width: <?=stats::getPorcentajeVotos()?>%;background: #ec6565;webkit-animation: bar 2s;">
+                                        style="height: 6px;float: left;width: <?=stats::getPorcentajeVotosCandidata($can->CandidataID)?>%;background: #ec6565;webkit-animation: bar 2s;">
                                     </div>
                                 </div>
-                                <p>Observa el porcentaje de los estudiantes quienes han votado por la candidata hasta el momento.</p>
+                                <p>Nombre completo:<br> <?=$can->Nombre . " " .  $can->ApellidoPaterno ." ". $can->ApellidoMaterno . "<br>
+                                Numero de votos: " . $can->numVotos ?></p>
                             </div>
                             <!-- <div class='drop'>
                                 <p>Take a closer look</p>
