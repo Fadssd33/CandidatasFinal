@@ -18,15 +18,19 @@
                 <div class="title-area">
 
                     <h1 class="title-modern">Estadisticas</h1>
-                    <h3>entium placeat dolorem error officiis libero voluptates eum nam delectus aliquid cum nemo animi,
-                        aperiam, non voluptas maxime deserunt.</h2>
+                    <h3>De manera analitica se maneja en este apartado, donde encontraras los porcentajes obtenidos en base a los botos por los estudiantes que han participado.</h2>
                         <div class="separator line-separator">♦</div>
                 </div>
+ 
+  <!--JAJA no se podia centar la caja de abajo.. y cree otra ;* -->
+                <div class='ui'  >
+                    <div class='col-md-4' >
+                    </div>
+                </div>
 
-
-                <div class='ui'>
-                    <div class='col-md-4'>
-                        <div class='ui_box'>
+                <div class='ui'  >
+                    <div class='col-md-4' >
+                        <div class='ui_box' >
                             <div class='ui_box__inner'>
                                 <h2>
                                     Alumnos que han votado
@@ -40,7 +44,7 @@
                                         style="height: 6px;float: left;width: <?=stats::getPorcentajeVotos()?>%;background: #ec6565;webkit-animation: bar 2s;">
                                     </div>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet. Some more super groovy information about this stat.</p>
+                                <p>Observa el porcentaje total de los estudiantes quienes han participado hasta el momento.</p>
                             </div>
                             <!-- <div class='drop'>
                                 <p>Take a closer look</p>
@@ -48,14 +52,12 @@
                             </div> -->
                         </div>
                     </div>
+                    
                     <!--fin div box -->
-
-
 
                 </div>
             </div>
         </div>
-
     </div>
 
 
@@ -95,7 +97,7 @@
                                         style="height: 6px;float: left;width: <?=stats::getPorcentajeVotos()?>%;background: #ec6565;webkit-animation: bar 2s;">
                                     </div>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet. Some more super groovy information about this stat.</p>
+                                <p>Observa el porcentaje de los estudiantes quienes han votado por la candidata hasta el momento.</p>
                             </div>
                             <!-- <div class='drop'>
                                 <p>Take a closer look</p>
