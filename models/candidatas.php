@@ -1,7 +1,10 @@
 <?php 
-    require_once 'config/db.php';
+    require_once 'config/db.php';    
     Class Candidata {
+        
+
         public $candidataID, $Nombre, $ApellidoMaterno, $ApellidoPaterno, $Correo, $CarreraID, $Sexo, $Edad, $numVotos, $imagen, $descripcion, $NombreCarrera;
+
         
         private $db;
 
@@ -24,6 +27,11 @@
         }
 
         function guardar() {
+            $this->Nombre = trim($this->Nombre);
+            $this->ApellidoMaterno = trim($this->ApellidoMaterno);
+            $this->ApellidoPaterno = trim($this->ApellidoPaterno);
+            $this->Correo = trim($this->Correo);
+            
             $sql = "INSERT INTO candidatas VALUES (NULL, '{$this->Nombre}', '{$this->ApellidoMaterno}','{$this->ApellidoPaterno}', '{$this->Correo}',{$this->CarreraID}, {$this->Sexo}, {$this->Edad},0,'{$this->imagen}','{$this->descripcion}');";
             $save = $this->db->query($sql);
             // $this->db-error;
@@ -62,6 +70,13 @@
         }
 
         function update($candidataID,$Nombre,$ApellidoMaterno, $ApellidoPaterno, $Correo, $CarreraID, $Edad, $imagen, $descripcion) {
+            $Nombre = trim($Nombre);
+            $ApellidoMaterno = trim($ApellidoMaterno);
+            $ApellidoPaterno = trim($ApellidoPaterno);
+            $Correo = trim($Correo);
+
+
+
         
         $sql= "UPDATE candidatas SET Nombre = '{$Nombre}', ApellidoMaterno = '{$ApellidoMaterno}', ApellidoPaterno = '{$ApellidoPaterno}', Correo = '{$Correo}', CarreraID = {$CarreraID}, Edad = {$Edad}, imagen = '{$imagen}',descripcion = '{$descripcion}' WHERE CandidataID = {$candidataID}";
         $update = $this->db->query($sql);
