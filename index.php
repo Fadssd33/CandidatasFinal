@@ -1,3 +1,4 @@
+<link href="assets/img/UESlogos.ico" rel="shortcut icon" /> 
 <?php
 	session_start();
 	require_once 'autoload.php';
