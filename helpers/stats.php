@@ -21,17 +21,19 @@
 
             //saca el numero de candidatas
             $numCandidatas = mysqli_num_rows($candidata->getCandidatas());
-            $numAlumnosVotados = mysqli_num_rows($alumno->getWhoVoted());
+            //Sacara el numero de votos
+            $votosTotales = $candidata->getNumVotos()->fetch_object()->suma;
+            
             //saca el numero de votos de la candidata
             $votos = $candidata->getVotes($ID);
             $votosObjeto = $votos->fetch_object();
         
             $numVotos = $votosObjeto->numVotos;
 
-            $porcentaje = ($numVotos * 100) / $numAlumnosVotados;
+            $porcentaje = ($numVotos * 100) / $votosTotales;
             
             
-            return $porcentaje;
+            return round($porcentaje);
 
         }
     }

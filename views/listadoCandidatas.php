@@ -26,7 +26,9 @@
                 <div class="team">
 
                     <div class="row">
+                    
                         <div class="col-md-10 col-md-offset-1">
+                       
                             <div class="row">
                                 <!-- //Inicio for o Foreach candidata-->
                                 <?php while($can = $candidatas->fetch_object()): ?>
@@ -43,7 +45,9 @@
                                                 <p class="small-text"><?=Utils::formatText($can->NombreCarrera);?></p>
                                                 <p class="description"><?=$can->descripcion?></p>
                                                 <?php if(isset($_SESSION['identity']) && $_SESSION['identity']->voto == 0):?>
-                                                <form action="<?=base_url?>alumno/saveVote" onSubmit="return confirm('Estas seguro que deseas votar por esta candiadta? (Solo puedes votar una vez)');" method="POST">
+                                                <form action="<?=base_url?>alumno/saveVote"
+                                                    onSubmit="return confirm('Estas seguro que deseas votar por esta candiadta? (Solo puedes votar una vez)');"
+                                                    method="POST">
                                                     <!-- form que manda el id de la candidata y id del alumno -->
                                                     <input type="hidden" name="candidataID"
                                                         value="<?=$can->CandidataID?>">
@@ -68,8 +72,13 @@
                     </div>
                 </div>
             </div>
-         
-            <?php
+
+            <!-- //Nuevo div -->
+        </div>
+    </div>
+</div>
+<!-- fin nuevos div -->
+<?php
            
     //footer
     require_once 'views/layout/footer.php'

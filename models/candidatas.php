@@ -134,6 +134,12 @@
         return $imagen;
        }
 
+       function getNumVotos() {
+            $sql = "SELECT sum(numVotos) AS suma FROM candidatas ";
+            $numVotos = $this->db->query($sql);
+            return $numVotos;
+       }
+
 
      
     }
