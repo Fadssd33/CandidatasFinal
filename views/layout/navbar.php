@@ -1,5 +1,3 @@
-<?=include_once 'config/parameters.php' ?>
-
 <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
         <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
         <div class="container">

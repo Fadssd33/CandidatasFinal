@@ -1,5 +1,7 @@
-<?php require_once 'config/parameters.php';
-require_once 'views/layout/head.php';
+<?php 
+    require_once 'config/parameters.php';
+    require_once 'views/layout/head.php';
+    require_once 'views/layout/navbar.php';
 ?>
 
 
@@ -11,7 +13,7 @@ require_once 'views/layout/head.php';
         <div class="container-fluid" id="top-container-fluid-nav">
             <div class="container">
                 <!---- for nav container ----->
-                <?=require_once 'views/layout/navbar.php'?>
+               
             </div>
         </div>
 
