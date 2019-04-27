@@ -1,13 +1,13 @@
 <?php 
     require_once 'config/parameters.php';
     require_once 'views/layout/head.php';
-    require_once 'views/layout/navbar.php';
+    require_once 'views/layout/navbarRosa.php';
 ?>
 
 
 
 <!------------start content ------------>
-
+<br><br><br>
 <body class="bodyError">
     <div class="wrapper">
         <div class="container-fluid" id="top-container-fluid-nav">

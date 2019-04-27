@@ -1395,7 +1395,12 @@ a,
   background-color: transparent;
   border-bottom: 1px solid transparent;
 }
-
+/* Para la navbar listado candidatas */
+.navbar-negra {
+  padding-top: 15px;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+}
 .navbar-toggle {
   margin-top: 19px;
   margin-bottom: 19px;

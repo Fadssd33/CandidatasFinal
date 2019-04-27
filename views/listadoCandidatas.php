@@ -2,11 +2,13 @@
     require_once 'autoload.php'; 
     require_once 'config/parameters.php';
     require_once 'views/layout/head.php';
-    require_once 'views/layout/navbar.php';
+    require_once 'views/layout/navbarRosa.php'
+    
 ?>
 
 
 <!-- contenido principal -->
+
 <div class="section section-our-team-freebie" id="candidatas">
     <div class="parallax filter filter-color-black">
         <div class="image" style="background-image:url('<?=base_url?>assets/img/header-2.jpeg')">

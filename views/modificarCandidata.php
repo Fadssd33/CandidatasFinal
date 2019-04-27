@@ -2,8 +2,9 @@
     require_once 'autoload.php'; 
     require_once 'config/parameters.php';
     require_once 'views/layout/head.php';
-    require_once 'views/layout/navbar.php';
+    require_once 'views/layout/navbarRosa.php';
 ?>
+<br><br>
 <div class="section section-our-clients-freebie">
     <div class="container">
         <div class="title-area">
@@ -101,12 +102,9 @@
                     </div>
                     <?php endwhile;?>
     </div>
-
     </a>
-
     </li>
     </ul>
-
     <?php
     //footer
     require_once 'views/layout/footer.php'
