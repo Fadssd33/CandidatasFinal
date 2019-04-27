@@ -36,17 +36,21 @@
                     <div class="col-md-4">
                         <div class="card card-member">
                             <div class="content">
-                                <div class="avatar avatar-danger">
-                                    <img alt="..." class="img-circle "
-                                        src="<?=base_url?>uploads/images/<?=$can->imagen?>" />
+                                <div class="imagen-alinear">
+                                    <div class="avatar avatar-danger">
+                                        <img alt="..." class="img-circle "
+                                            src="<?=base_url?>uploads/images/<?=$can->imagen?>" />
+                                    </div>
                                 </div>
                                 <div class="description">
-                                    <form action="<?=base_url?>candidata/modificarCandidata2" onSubmit="return confirm('¿Realmente deseas guardar los cambios?');"
+                                    <form action="<?=base_url?>candidata/modificarCandidata2"
+                                        onSubmit="return confirm('¿Realmente deseas guardar los cambios?');"
                                         method="POST" enctype="multipart/form-data">
 
-                                        <input type="file" class="form-control-file" name="imagen" value="<?=$can->imagen?>">
-            
-                                        
+                                        <input type="file" class="form-control-file" name="imagen"
+                                            value="<?=$can->imagen?>">
+
+
                                         <input class="title" type="text" name="nombre" value="<?=$can->Nombre?>">
                                         <input class="title" type="text" name="apellidoMaterno" id=""
                                             value="<?=$can->ApellidoMaterno?>">
@@ -56,7 +60,7 @@
                                         <!-- Mostrar la carrera -->
 
                                         <?php $carreras = Utils::showCarreras();?>
-                                        <select class="small-text" name="carreraID" >
+                                        <select class="small-text" name="carreraID">
                                             <option value="<?=$can->CarreraID?>" selected>
                                                 <?=$can->NombreCarrera?>
 

@@ -34,7 +34,7 @@
                                 <div class="col-md-4">
                                     <div class="card card-members">
                                         <div class="content">
-                                            <div style="min-height: 12rem;">
+                                            <div class="imagen-alinear">
                                                 <div class="avatar avatar-danger">
                                                     <img alt="..." class="img-circle"
                                                         src="<?=base_url?>uploads/images/<?=$can->imagen?>" />
