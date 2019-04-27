@@ -76,7 +76,7 @@
                  <option selected>Sexo...</option>
                   <option id="sexo" value="1">Femenino</option>
                   <option id="sexo" value="2">Masculino</option>
-                  <option id="sexo" value="3">indistinto</option>
+                  
                   </select>
                  </div>
              
