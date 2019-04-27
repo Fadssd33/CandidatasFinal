@@ -37,7 +37,7 @@
                         <div class="card card-member">
                             <div class="content">
                                 <div class="avatar avatar-danger">
-                                    <img alt="..." class="img-circle"
+                                    <img alt="..." class="img-circle "
                                         src="<?=base_url?>uploads/images/<?=$can->imagen?>" />
                                 </div>
                                 <div class="description">
@@ -56,7 +56,7 @@
                                         <!-- Mostrar la carrera -->
 
                                         <?php $carreras = Utils::showCarreras();?>
-                                        <select class="small-text" name="carreraID">
+                                        <select class="small-text" name="carreraID" >
                                             <option value="<?=$can->CarreraID?>" selected>
                                                 <?=$can->NombreCarrera?>
 

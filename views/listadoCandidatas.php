@@ -17,9 +17,7 @@
                     <div class="title-area">
                         <h2>Candidatas</h2>
                         <div class="separator separator-danger">✻</div>
-                        <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, ab non?
-                            Distinctio exercitationem quaerat obcaecati officia voluptates, sed temporibus et commodi
-                            corrupti molestias unde, accusantium adipisci recusandae doloremque dolor quis.</p>
+                        <p class="description">Listado de las candidatas a reina UES, apoya a tu favorita al hacer click en el boton VOTAR.</p>
                     </div>
                 </div>
 
