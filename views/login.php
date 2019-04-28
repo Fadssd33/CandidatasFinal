@@ -63,12 +63,12 @@
                             <input type="text" name="expediente" class="form-control input_pass" value=""
                                 placeholder="Expediente" required>
                         </div>
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customControlInline">
-                                <label class="custom-control-label" for="customControlInline">Recuerdame</label>
-                            </div>
+                        <div class="d-flex justify-content-center links">
+                            <?php if(isset($_SESSION['error_login'])):?>
+                            <p class="errorMessage">Curp o expediente incorrecto</p>
+                            <?php endif;?>
                         </div>
+                        <?= Utils::deleteSession('error_login');?>
 
                 </div>
                 <div class="d-flex justify-content-center mt-3 login_container">
@@ -77,11 +77,8 @@
                 </form>
                 <div class="mt-4">
 
-                    <?php if(isset($_SESSION['error_login'])):?>
-                    <!-- modificar el estilo de este h3 -->
-                    <h3>Curp o expediente incorrecto</h3>
-                    <?php endif;?>
-                    <?= Utils::deleteSession('error_login');?>
+
+
 
                     <div class="d-flex justify-content-center links">
                         ¿No tienes cuenta? <a href="#" class="ml-2">Registrarse</a>

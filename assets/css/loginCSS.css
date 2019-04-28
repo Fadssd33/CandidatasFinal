@@ -6,7 +6,7 @@
         background: #685454 !important;
     }
     .user_card {
-        height: 400px;
+        height: 370px;
         width: 350px;
         margin-top: auto;
         margin-bottom: auto;
@@ -39,7 +39,7 @@
         border: 2px solid white;
     }
     .form_container {
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .login_btn {
         width: 100%;
@@ -66,4 +66,8 @@
     }
     .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
         background-color: #c0392b !important;
+    }
+    .errorMessage {
+        color: red;
+        font-weight: bold;
     }
