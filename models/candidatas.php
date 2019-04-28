@@ -75,6 +75,13 @@
             $ApellidoPaterno = trim($ApellidoPaterno);
             $Correo = trim($Correo);
 
+            if($imagen ==  NULL) {
+               $imagen = $this->getIMG($candidataID);
+               $imagen = $imagen->fetch_object()->imagen;
+               
+            }
+            
+
 
 
         

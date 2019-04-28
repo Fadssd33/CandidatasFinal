@@ -52,16 +52,16 @@
                                             value="<?=$can->imagen?>">
 
 
-                                        <input class="title formCarrera" type="text" name="nombre" value="<?=$can->Nombre?>">
-                                        <input class="title formCarrera" type="text" name="apellidoMaterno" id=""
+                                        <input class="form-control formCarrera" type="text" name="nombre" value="<?=$can->Nombre?>">
+                                        <input class="form-control formCarrera" type="text" name="apellidoMaterno" id=""
                                             value="<?=$can->ApellidoMaterno?>">
-                                        <input class="title formCarrera" type="text" name="apellidoPaterno" id=""
+                                        <input class="form-control formCarrera" type="text" name="apellidoPaterno" id=""
                                             value="<?=$can->ApellidoPaterno?>">
-                                        <input class="title formCarrera" type="text" name="correo" id="" value="<?=$can->Correo?>">
+                                        <input class="form-control formCarrera" type="text" name="correo" id="" value="<?=$can->Correo?>">
                                         <!-- Mostrar la carrera -->
 
                                         <?php $carreras = Utils::showCarreras();?>
-                                        <select class="small-text formCarrera" name="carreraID">
+                                        <select class="form-control form-control-lg formCarrera" name="carreraID">
                                             <option value="<?=$can->CarreraID?>" selected>
                                                 <?=$can->NombreCarrera?>
 
@@ -79,10 +79,10 @@
 
                                         </select><br>
 
-                                        <input type="number" name="edad" id="edad" class="formCarrera" value="<?=$can->Edad?>">
+                                        <input type="number" name="edad" id="edad" class="form-control formCarrera" value="<?=$can->Edad?>">
 
 
-                                        <textarea class="formCarrera"name="descripcion" id="" cols="23" rows="5"
+                                        <textarea class="formCarrera form-control"name="descripcion" id="" cols="23" rows="5"
                                             maxlength="300"><?=$can->descripcion?></textarea>
 
 
