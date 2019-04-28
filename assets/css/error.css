@@ -1,0 +1,16 @@
+.all div {
+    background-image: url("../images/.jpg");
+    background-color:white;
+    background-attachment:scroll;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    line-height:5px; 
+    }
+    .all .display-1 {text-align:center;color:#e1b7b7;}
+    .all .display-1 .fa {margin: auto 15% auto auto;}
+    .all .display-3 {text-align:center;color:#df726a;}
+    .all .lower-case {text-align:center;}
+
+
+    

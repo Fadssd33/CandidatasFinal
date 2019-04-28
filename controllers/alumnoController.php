@@ -81,6 +81,11 @@
             header('location:' . base_url . "candidata/index");
         }
 
+        public function about() {
+            require_once 'views/about.php';
+            
+        }
+
         // public function confirmarVoto() {
         //     $candidata = new Candidata();
         //     $candidataData = $candidata->getById($_POST['']);

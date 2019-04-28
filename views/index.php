@@ -3,7 +3,6 @@
     require_once 'config/parameters.php';
     require_once 'views/layout/head.php';
     require_once 'views/layout/navbar.php';
-    //prueba
 ?>
 <!-- contenido -->
 <link rel="ICON" href="assets/img/UESlogos.ico">

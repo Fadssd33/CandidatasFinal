@@ -10,7 +10,7 @@
                                 <a href="#">Home</a></li>
 
                             <li>
-                                <a href="#">Our Portfolio</a>
+                                <a href="<?=base_url?>alumno/about">Our Portfolio</a>
                             </li>
                             <li>
                                 <a href="#">About Us</a>
