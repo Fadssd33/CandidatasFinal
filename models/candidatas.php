@@ -21,7 +21,7 @@
 
         function getFirstThree() {
             // $firstThree = $this->db->query("SELECT * FROM candidatas LIMIT 3");
-            $firstThree = $this->db->query("SELECT CandidataID, Nombre, ApellidoMaterno, ApellidoPaterno, Correo, Sexo, Edad, numVotos, imagen, descripcion, NombreCarrera  FROM candidatas INNER JOIN carreras ON carreras.CarreraID =  candidatas.CarreraID LIMIT 3");
+            $firstThree = $this->db->query("SELECT CandidataID, Nombre, ApellidoMaterno, ApellidoPaterno, Correo, Sexo, Edad, numVotos, imagen, descripcion, NombreCarrera FROM candidatas INNER JOIN carreras ON carreras.CarreraID = candidatas.CarreraID ORDER BY CandidataID DESC LIMIT 3 ");
             
             return $firstThree;
         }
