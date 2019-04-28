@@ -22,7 +22,7 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="our-team">
                         <div class="picture">
-                            <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                            <img class="img-fluid" src="<?=base_url?>assets\img\equipo\ferga.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="name">Fernanda Licón</h3>
@@ -43,7 +43,7 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="our-team">
                         <div class="picture">
-                            <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
+                            <img class="img-fluid" src="<?=base_url?>assets\img\equipo\LeoGay.jpeg">
                         </div>
                         <div class="team-content">
                             <h3 class="name">Leonel Bustamante</h3>

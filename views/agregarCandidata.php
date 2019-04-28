@@ -19,13 +19,13 @@
                 <img tex-align ="center" width="200" height="150" src="https://media.giphy.com/media/82kHKjsdPB9wQ/giphy.gif">
                <?php if(isset($_SESSION['candidataGuardada']) && $_SESSION['candidataGuardada'] == "complete"):?>
                 <!-- Cambiar esto a verde -->
-                     <p class="description">
-                       Candidata Agregada correctamente.
+                     <p class="description" style="color:green">
+                       Candidata Agregada correctamente.✔
                     </p> <br>
                 <?php elseif(isset($_SESSION['candidataGuardada']) && $_SESSION['candidataGuardada'] != "complete"):?>
                     <!-- Cambiar esto a rojo -->
                     
-                    <p class="description">
+                    <p class="description" style="color:red">
                         ERROR: La candidata no se ha agregado.
                     </p> <br>
                 <?php endif;?>
@@ -74,8 +74,7 @@
             
               <h3 class="mr-sm-2 sr-only" for="sexo">Preference</h3>
                  <select class="custom-select" id="sexo" name="sexo" required>
-                 <option selected>Sexo...</option>
-                  <option id="sexo" value="1">Femenino</option>
+                  <option selected id="sexo" value="1">Femenino</option>
                   <option id="sexo" value="2">Masculino</option>
                   
                   </select>
@@ -83,13 +82,13 @@
              
                     <!-- Edad -->
                     <h3 for="edad">Edad: </h3>
-                    <input type="number" name="edad" id="edad">
+                    <input type="number" name="edad" id="edad" min="18" required>
 
                     
                     <br>
                     <h3 for="descripcion">Descripcion: </h3>
                     <br>
-                    <textarea class="form-control" name="descripcion" id="" cols="30" rows="10" maxlength="300"></textarea>
+                    <textarea class="form-control" name="descripcion" id="" cols="30" rows="10" maxlength="300" required></textarea>
                     <br>
                       <p class="description">
                        Maximo 300 caracteres

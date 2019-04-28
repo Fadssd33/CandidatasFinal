@@ -14,13 +14,14 @@
                 <h5 class="subtitle text-gray">Eliminar</h5>
                 <h2>Candidatas</h2>
                 <div class="separator separator-danger">∎</div>
-                <img tex-align="center" width="200" height="150"
-                    src="https://media.giphy.com/media/1wmNrH9djnnnQLIJu7/giphy.gif">
+               
 
                 <?php if(isset($_SESSION['candidataEliminada']) && $_SESSION['candidataEliminada'] == "complete"):?>
                 <!-- Cambiar esto a verde -->
-                <p class="description">
-                    Candidata eliminada correctamente.
+                <p class="description" style="color:green">
+                <img tex-align="center" width="200" height="150"
+                    src="https://media.giphy.com/media/1wmNrH9djnnnQLIJu7/giphy.gif"><br>
+                    Candidata eliminada correctamente. ✔
                 </p> <br>
                 <?php elseif(isset($_SESSION['candidataEliminada']) && $_SESSION['candidataEliminada'] != "complete"):?>
                 <!-- Cambiar esto a rojo -->

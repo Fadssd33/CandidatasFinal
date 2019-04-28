@@ -15,6 +15,13 @@
 
 /*      light colors         */
 
+.formCarrera {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  min-width: 100%;
+}
 .imagen-alinear {
 
   

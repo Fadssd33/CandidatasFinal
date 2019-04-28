@@ -18,7 +18,7 @@
                 <div class="title-area">
 
                     <h1 class="title-modern">Estadisticas</h1>
-                    <h3>De manera analitica se maneja en este apartado, donde encontraras los porcentajes obtenidos en base a los botos por los estudiantes que han participado.</h2>
+                    <h3>De manera analitica se maneja en este apartado, donde encontraras los porcentajes obtenidos en base a los votos por los estudiantes que han participado.</h2>
                         <div class="separator line-separator">♦</div>
                 </div>
  

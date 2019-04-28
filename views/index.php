@@ -265,7 +265,7 @@
             <div class="title-area">
                 <h2 class="text-white">¿Quieres participar como candidata?</h2>
                 <div class="separator line-separator">♦</div>
-                <p class="description">Solo tienes que pertenecer a unas de las carreras asignadas por la universidad, asercate con nosotros para participar como candidata a Reina UES.</p>
+                <p class="description">Solo tienes que pertenecer a unas de las carreras asignadas por la universidad, acercate con nosotros para participar como candidata a Reina UES.</p>
             </div>
 
             <div class="button-get-started">
