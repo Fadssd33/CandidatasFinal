@@ -3,17 +3,17 @@
         <div class="row">
             <div class="col-md-2 col-sm-3">
                 <div class="info">
-                    <h5 class="title">Company</h5>
+                    <h5 class="title">Empresa</h5>
                     <nav>
                         <ul>
                             <li>
-                                <a href="#">Home</a></li>
+                                <a href="#">Inicio</a></li>
 
                             <li>
                                 <a href="<?=base_url?>alumno/about">Our Portfolio</a>
                             </li>
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="#">Acerca de nosotros</a>
                             </li>
                         </ul>
                     </nav>
@@ -21,17 +21,17 @@
             </div>
             <div class="col-md-3 col-md-offset-1 col-sm-3">
                 <div class="info">
-                    <h5 class="title"> Help and Support</h5>
+                    <h5 class="title"> Ayuda </h5>
                     <nav>
                         <ul>
                             <li>
-                                <a href="#">Contact Us</a>
+                                <a href="#">Contactanos </a>
                             </li>
                             <li>
-                                <a href="#">Terms &amp; Conditions</a>
+                                <a href="#">Terminoss &amp; Condiciones</a>
                             </li>
                             <li>
-                                <a href="#">Company Policy</a>
+                                <a href="#">Politicas</a>
                             </li>
 
                         </ul>
@@ -40,7 +40,7 @@
             </div>
             <div class="col-md-3 col-sm-3">
                 <div class="info">
-                    <h5 class="title">Latest News</h5>
+                    <h5 class="title">Ultimas noticias</h5>
                     <nav>
                         <ul>
                             <li>
@@ -62,7 +62,7 @@
             </div>
             <div class="col-md-2 col-md-offset-1 col-sm-3">
                 <div class="info">
-                    <h5 class="title">Follow us on</h5>
+                    <h5 class="title">Siguienos en..</h5>
                     <nav>
                         <ul>
 
@@ -98,7 +98,7 @@
         <div class="copyright">
             © <script>
             document.write(new Date().getFullYear())
-            </script> Made with ❤ by Las Perras
+            </script> Hecho con ❤ por Las Perras
         </div>
     </div>
 </footer>
