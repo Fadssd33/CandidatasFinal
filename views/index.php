@@ -43,7 +43,7 @@
 
             <div class="button-get-started">
                 <a href="<?=base_url?>candidata/listadoCandidatas" class="btn btn-white btn-fill btn-lg ">
-                    ¡Votar!
+                    Ver candidatas
                 </a>
             </div>
             <?php endif; ?>
@@ -63,9 +63,8 @@
             <div class="title-area">
                 <h2>Servicios de Administrador</h2>
                 <div class="separator separator-danger">✻</div>
-                <p class="description">Apartado exclusivo para el administrador, encargado de llevar el manejo y contro
-                    de las candidatas a reina en el cual contara con la responsabilidad de agregar, eliminar y editar si
-                    asi es el caso de las estudiantes que se encuentren inscritas en el evento.</p>
+                <p class="description">Apartado exclusivo para el administrador, encargado de llevar el manejo y control
+                    de las candidatas a reina en el cual contara con la responsabilidad de agregar, eliminar y editar a las estudiantes que se encuentren inscritas en el evento.</p>
             </div>
         </div>
         <div class="row">
@@ -90,7 +89,7 @@
                         </div>
                         <h3>Eliminar Candidata</h3>
                         <p class="description">Elimina a una estudiante de la cual no se requiera en el evento su
-                            participacion a candidata a reina.</p>
+                            participacion.</p>
                     </div>
                 </a>
             </div>
@@ -120,17 +119,17 @@
             <div class="content">
                 <div class="row">
                     <div class="title-area">
-                        <h2>Candidatas</h2>
+                        <h2>Ultimas Candidatas</h2>
                         <div class="separator separator-danger">✻</div>
 
                         <!-- Si el usuario ya voto -->
                         <?php if(isset($_SESSION['identity']) && $_SESSION['identity']->voto == 1):?>
-                        <p class="description">Ya has votado por una candidata, pero aun asi puedes ver el top ranking!</p>
+                        <p class="description">Ya has votado por una candidata, pero aun asi puedes ver las ultimas agregadas!</p>
                         <!-- si el usuarion no ha votado -->
                         <?php elseif(isset($_SESSION['identity']) && $_SESSION['identity']->voto == 0):?>
                         <p class="description">En el siguiente apartado se encuentras las candidatas que participan para ser Reina UES, no olvides apoyar.</p>
                         <?php else :?>
-                        <p class="description">Inicia secion para que en el siguiente apartado se encuentres las candidatas que participan para ser Reina UES, no olvides apoyar.</p>
+                        <p class="description">Inicia sesion para que en el siguiente apartado se encuentres las candidatas que participan para ser Reina UES, no olvides apoyar.</p>
 
 
                         <?php endif; ?>
